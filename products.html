@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Products - Building Supplies</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="products.html">Products</a> |
+    <a href="cart.html">Cart</a>
+  </nav>
+
+  <h1>Our Products</h1>
+
+  <div class="product" onclick="showPopup('images/product1.jpg')">
+    <img src="images/product1.jpg" alt="Cement Bag">
+    <p>Cement Bag - £10</p>
+    <button onclick="addToCart('Cement Bag', 10); event.stopPropagation();">Add to Cart</button>
+  </div>
+
+  <div class="product" onclick="showPopup('images/product2.jpg')">
+    <img src="images/product2.jpg" alt="Bricks Pack">
+    <p>Bricks Pack - £25</p>
+    <button onclick="addToCart('Bricks Pack', 25); event.stopPropagation();">Add to Cart</button>
+  </div>
+
+  <div class="product" onclick="showPopup('images/product3.jpg')">
+    <img src="images/product3.jpg" alt="Steel Rods">
+    <p>Steel Rods - £40</p>
+    <button onclick="addToCart('Steel Rods', 40); event.stopPropagation();">Add to Cart</button>
+  </div>
+</body>
+</html>
